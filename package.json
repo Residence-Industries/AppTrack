@@ -1,9 +1,13 @@
 {
   "name": "app_track",
   "version": "1.0.0",
-  "description": "job application tracking app",
-  "main": "index.js",
-  "scripts": {},
+  "description": "Job application tracking app",
+  "scripts": {
+    "unittest:server": "./node_modules/.bin/mocha --reporter nyan --compilers js:babel-core/register test/server/index.js",
+    "unittest:client": "./node_modules/.bin/mocha --reporter nyan --compilers js:babel-core/register test/client/*/*.js",
+    "integrationtest": "./node_modules/.bin/mocha --reporter nyan --compilers js:babel-core/register test/integration/ApiSpec.js",
+    "test": "npm run unittest:server && npm run unittest:client && npm run integrationtest"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Residence-Industries/AppTrack.git"
@@ -15,12 +19,25 @@
   },
   "homepage": "https://github.com/Residence-Industries/AppTrack#readme",
   "devDependencies": {
+    "babel-cli": "^6.11.4",
+    "babel-core": "^6.13.2",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-react": "^6.11.1",
     "chai": "^3.5.0",
     "enzyme": "^2.4.1",
     "mocha": "^3.0.1",
+    "react-addons-test-utils": "^15.3.0",
     "sinon": "^1.17.5"
   },
   "dependencies": {
-    "react": "^15.3.0"
+    "react": "^15.3.0",
+    "react-dom": "^15.3.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2"
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   }
 }

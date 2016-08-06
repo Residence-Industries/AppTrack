@@ -1,6 +1,6 @@
 import React from 'react';
 import { expect } from 'chai';
-import * as types from '../../../client-ios/constants/ActionTypes';
+import * as types from '../../../client/constants/actionTypes';
 
 // Import reducers here
 
@@ -16,7 +16,7 @@ describe('Reducers', () => {
         didItPass: false
       }, action);
 
-      expect(state.didItPass).to.eql.(action.didItPass);
+      expect(state.didItPass).to.eql(action.didItPass);
     })
   })
 })
