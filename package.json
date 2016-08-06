@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "job application tracking app",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Residence-Industries/AppTrack.git"
@@ -14,5 +13,11 @@
   "bugs": {
     "url": "https://github.com/Residence-Industries/AppTrack/issues"
   },
-  "homepage": "https://github.com/Residence-Industries/AppTrack#readme"
+  "homepage": "https://github.com/Residence-Industries/AppTrack#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "enzyme": "^2.4.1",
+    "mocha": "^3.0.1",
+    "sinon": "^1.17.5"
+  }
 }
