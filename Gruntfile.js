@@ -22,14 +22,33 @@ module.exports = function(grunt) {
       }
     },
 
+    sass: {
+      dist: {
+        files: {
+          // destination: source
+          'client/styles/styles.css': 'client/styles/styles.scss'
+        }
+      }
+    },
+
+    cssmin: {
+      my_target: {
+        files: {
+          'build/styles.min.css': 'client/styles/styles.css'
+        }
+      }
+    }
 
   });
 
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
+  grunt.loadNpmTasks('grunt-contrib-sass');
 
   grunt.registerTask('build', [
     'concat',
-    'uglify'
+    'uglify',
+    'sass',
+    'cssmin'
   ]);
 }

@@ -6,7 +6,8 @@
     "unittest:server": "./node_modules/.bin/mocha --reporter nyan --compilers js:babel-core/register test/server/*.js",
     "unittest:client": "./node_modules/.bin/mocha --reporter nyan --compilers js:babel-core/register test/client/*/*.js",
     "integrationtest": "./node_modules/.bin/mocha --reporter nyan --compilers js:babel-core/register test/integration/ApiSpec.js",
-    "test": "npm run unittest:server && npm run unittest:client && npm run integrationtest"
+    "test": "npm run unittest:server && npm run unittest:client && npm run integrationtest",
+    "postinstall": "grunt build"
   },
   "repository": {
     "type": "git",
@@ -25,7 +26,10 @@
     "chai": "^3.5.0",
     "enzyme": "^2.4.1",
     "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
     "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-cssmin": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
     "grunt-contrib-uglify": "^2.0.0",
     "mocha": "^3.0.1",
     "react-addons-test-utils": "^15.3.0",
