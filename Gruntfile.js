@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  grunt.initiConfig({
+  grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
 
     concat: {
@@ -44,6 +44,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   grunt.registerTask('build', [
     'concat',
