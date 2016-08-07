@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Job application tracking app",
   "scripts": {
-    "unittest:server": "./node_modules/.bin/mocha --reporter nyan --compilers js:babel-core/register test/server/index.js",
+    "unittest:server": "./node_modules/.bin/mocha --reporter nyan --compilers js:babel-core/register test/server/*.js",
     "unittest:client": "./node_modules/.bin/mocha --reporter nyan --compilers js:babel-core/register test/client/*/*.js",
     "integrationtest": "./node_modules/.bin/mocha --reporter nyan --compilers js:babel-core/register test/integration/ApiSpec.js",
     "test": "npm run unittest:server && npm run unittest:client && npm run integrationtest"
@@ -17,7 +17,6 @@
   "bugs": {
     "url": "https://github.com/Residence-Industries/AppTrack/issues"
   },
-  "homepage": "https://github.com/Residence-Industries/AppTrack#readme",
   "devDependencies": {
     "babel-cli": "^6.11.4",
     "babel-core": "^6.13.2",
@@ -27,7 +26,9 @@
     "enzyme": "^2.4.1",
     "mocha": "^3.0.1",
     "react-addons-test-utils": "^15.3.0",
-    "sinon": "^1.17.5"
+    "sinon": "^1.17.5",
+    "sinon-as-promised": "^4.0.2",
+    "supertest": "^2.0.0"
   },
   "dependencies": {
     "react": "^15.3.0",
