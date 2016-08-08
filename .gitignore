@@ -4,3 +4,13 @@ npm-debug.log
 
 # env
 env.js
+
+# build
+build/
+
+# sass
+.sass-cache
+
+# coverage
+test/coverage/instrument
+test/coverage/reports
