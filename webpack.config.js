@@ -28,13 +28,10 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: ['style', 'css', 'sass']
+        loaders: "css-loader!sass-loader
       }
     ]
-  },
-  sassLoader: {
-    includePaths: [path.resolve(__dirname, "./client/styles")]
-  },
+  }
   devServer: {
     contentBase: './build'
   }
