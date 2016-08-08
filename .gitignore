@@ -10,3 +10,7 @@ build/
 
 # sass
 .sass-cache
+
+# coverage
+test/coverage/instrument
+test/coverage/reports

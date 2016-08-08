@@ -5,7 +5,7 @@
   "scripts": {
     "test": "grunt test",
     "postinstall": "grunt build",
-    "try": "grunt build"
+    "coverage": "grunt coverage"
   },
   "repository": {
     "type": "git",
@@ -30,10 +30,6 @@
     "grunt": "^1.0.1",
     "grunt-babel": "^6.0.0",
     "grunt-cli": "^1.2.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-cssmin": "^1.0.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-uglify": "^2.0.0",
     "grunt-istanbul": "^0.7.1",
     "grunt-mocha-test": "^0.12.7",
     "mocha": "^3.0.1",
