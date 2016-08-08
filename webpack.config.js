@@ -28,10 +28,10 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        loaders: "css-loader!sass-loader
+        loaders: "css-loader!sass-loader"
       }
     ]
-  }
+  },
   devServer: {
     contentBase: './build'
   }

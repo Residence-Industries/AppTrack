@@ -4,7 +4,7 @@
   "description": "Job application tracking app",
   "scripts": {
     "test": "grunt test",
-    "postinstall": "grunt build",
+    "postinstall": "webpack",
     "coverage": "grunt coverage"
   },
   "repository": {
