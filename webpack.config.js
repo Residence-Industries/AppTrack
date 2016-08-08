@@ -25,8 +25,15 @@ module.exports = {
         query: {
           presets: ['es2015']
         }
+      },
+      {
+        test: /\.scss$/,
+        loaders: ['style', 'css', 'sass']
       }
     ]
+  },
+  sassLoader: {
+    includePaths: [path.resolve(__dirname, "./client/styles")]
   },
   devServer: {
     contentBase: './build'
