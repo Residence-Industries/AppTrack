@@ -43,10 +43,17 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.7.1",
+    "express": "^4.14.0",
+    "morgan": "^1.7.0",
+    "neo4j": "^1.1.1",
+    "path": "^0.12.7",
     "react": "^15.3.0",
     "react-dom": "^15.3.0",
     "react-redux": "^4.4.5",
-    "redux": "^3.5.2"
+    "redux": "^3.5.2",
+    "request": "^2.74.0"
   },
   "babel": {
     "presets": [
